@@ -146,7 +146,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
 				<version>2.6</version>
@@ -154,7 +154,7 @@
 					<goal>deploy-file</goal>
 				</goals>
 				<configuration>
-					<!-- <repositoryId>artifactory</repositoryId> -->
+					<repositoryId>artifactory</repositoryId>
 					<packaging>zip</packaging>
 					<generatePom>true</generatePom>
 					<url>${project.distributionManagement.snapshotRepository.url}</url>
@@ -163,7 +163,7 @@
 					<version>${project.version}</version>
 					<file>${WORKSPACE}/target/app.zip</file>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 </project>
