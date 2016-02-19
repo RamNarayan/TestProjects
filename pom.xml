@@ -154,14 +154,14 @@
 					<goal>deploy-file</goal>
 				</goals>
 				<configuration>
-					<repositoryId>artifactory</repositoryId>
+					<!-- <repositoryId>artifactory</repositoryId> -->
 					<packaging>zip</packaging>
 					<generatePom>true</generatePom>
 					<url>${project.distributionManagement.snapshotRepository.url}</url>
 					<artifactId>${project.artifactId}</artifactId>
 					<groupId>${project.groupId}</groupId>
 					<version>${project.version}</version>
-					<file>${WORKSPACE}/app.zip</file>
+					<file>${WORKSPACE}/target/app.zip</file>
 				</configuration>
 			</plugin>
 		</plugins>
